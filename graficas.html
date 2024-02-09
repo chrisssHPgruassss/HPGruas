@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="styls.css">
+    <marquee direction="left" width="100%"><font color="white"><b>|||H.P GRUAS & SERVICIOS AUTOMOTRICES|||722 33 011 75</marquee>
+    <table>
+        <tr>
+            <th><a href="pagina.php">Disponibilidad</a></th>
+            <th> <a href="index.html">Regresar</a></th>
+            <th> <a href="pagos.php">Pagos</a></th>
+        </tr>
+    </table>
+</head>
+<body>
+    <div id="menu-container">
+        <a href="graficas.html">Ingresar Datos</a>
+        <a href="editar.html">Editar</a>
+        <a href="borrar.html">Borrar</a>
+        <a href="mostrar.html">Mostrar Datos</a>
+        <a href="buscar.html">Buscar</a>
+    </div>
+    <div id="form-container">
+        <h1>Servicios HP</h1>
+        <form action="procesar.php" method="post">
+                      
+                       <label for="numero_servicio">Número de Servicio:</label>
+                       <input type="text" id="numero_servicio" name="numero_servicio" required>
+           
+                       <label for="fecha">Fecha:</label>
+                       <input type="date" id="fecha" name="fecha" required>
+           
+                       <label for="nombre_cliente">Nombre del Cliente:</label>
+                       <input type="text" id="nombre_cliente" name="nombre_cliente" required>
+           
+                       <label for="telefono">Teléfono:</label>
+                       <input type="text" id="telefono" name="telefono" required>
+           
+                       <label for="falla_detectada">Falla Detectada:</label>
+                       <textarea id="falla_detectada" name="falla_detectada" required></textarea>
+           
+                       <label for="unidad">Unidad:</label>
+                       <input type="text" id="unidad" name="unidad" required>
+           
+                       <label for="costo">Costo:</label>
+                       <input type="number" id="costo" name="costo" step="0.01" required>
+           
+                       <label for="gasto">Gasto:</label>
+                       <input type="number" id="gasto" name="gasto" step="0.01" required>
+           
+                       <label for="hora_entrega">Hora de Entrega de la Unidad:</label>
+                       <input type="time" id="hora_entrega" name="hora_entrega">
+           
+                       <label for="placas">Placas:</label>
+                       <input type="text" id="placas" name="placas">
+           
+                       
+                       <label>Elementos del Inventario:</label><br>
+           
+                   <input type="checkbox" id="radio" name="inventario[]" value="RADIO">
+                   <label for="radio">RADIO</label><br>
+           
+                      <input type="checkbox" id="espejo_retrovisor" name="inventario[]" value="ESPEJO RETROVISOR">
+                   <label for="espejo_retrovisor">ESPEJO RETROVISOR</label><br>
+                   
+                   <input type="checkbox" id="limpiadores" name="inventario[]" value="LIMPIADORES">
+                   <label for="limpiadores">LIMPIADORES</label><br>
+                   
+                   <input type="checkbox" id="cristales" name="inventario[]" value="CRISTALES">
+                   <label for="cristales">CRISTALES</label><br>
+                   
+                   <input type="checkbox" id="espejos_laterales" name="inventario[]" value="ESPEJOS LATERALES">
+                   <label for="espejos_laterales">ESPEJOS LATERALES</label><br>
+                   
+                   <input type="checkbox" id="llantas_refaccion" name="inventario[]" value="LLANTAS DE REFACCION">
+                   <label for="llantas_refaccion">LLANTAS DE REFACCION</label><br>
+                   
+                   <input type="checkbox" id="gato" name="inventario[]" value="GATO">
+                   <label for="gato">GATO</label><br>
+                   
+                   <input type="checkbox" id="tapon_gasolina" name="inventario[]" value="TAPON DE GASOLINA">
+                   <label for="tapon_gasolina">TAPON DE GASOLINA</label><br>
+                   
+                   <input type="checkbox" id="tapetes" name="inventario[]" value="TAPETES">
+                   <label for="tapetes">TAPETES</label><br>
+                   
+                   <input type="checkbox" id="cuartos" name="inventario[]" value="CUARTOS">
+                   <label for="cuartos">CUARTOS</label><br>
+                   
+                   <input type="checkbox" id="baston_seguridad" name="inventario[]" value="BASTON DE SEGURIDAD">
+                   <label for="baston_seguridad">BASTON DE SEGURIDAD</label><br>
+                   
+                   <input type="checkbox" id="antena" name="inventario[]" value="ANTENA">
+                   <label for="antena">ANTENA</label><br>
+                   
+                   <input type="checkbox" id="molduras_completas" name="inventario[]" value="MOLDURAS COMPLETAS">
+                   <label for="molduras_completas">MOLDURAS COMPLETAS</label><br>
+                   
+                   <input type="checkbox" id="triangulos_seguridad" name="inventario[]" value="TRIANGULOS DE SEGURIDAD">
+                   <label for="triangulos_seguridad">TRIANGULOS DE SEGURIDAD</label><br>
+                   
+                   <input type="checkbox" id="herramientas" name="inventario[]" value="HERRAMIENTAS">
+                   <label for="herramientas">HERRAMIENTAS</label><br>
+                   
+                   <input type="checkbox" id="calaveras" name="inventario[]" value="CALAVERAS">
+                   <label for="calaveras">CALAVERAS</label><br>
+                   
+                   <input type="checkbox" id="extintor" name="inventario[]" value="EXTINTOR">
+                   <label for="extintor">EXTINTOR</label><br>
+                   
+                   <input type="checkbox" id="cables_corriente" name="inventario[]" value="CABLES PASA CORRIENTE">
+                   <label for="cables_corriente">CABLES PASA CORRIENTE</label><br>
+                   
+                   <input type="checkbox" id="emblemas" name="inventario[]" value="EMBLEMAS">
+                   <label for="emblemas">EMBLEMAS</label><br>
+                   
+                   <input type="checkbox" id="encendedor" name="inventario[]" value="ENCENDEDOR">
+                   <label for="encendedor">ENCENDEDOR</label><br>
+                   
+                   <input type="checkbox" id="birlos_seguridad" name="inventario[]" value="BIRLOS DE SEGURIDAD">
+                   <label for="birlos_seguridad">BIRLOS DE SEGURIDAD</label><br>
+                   
+                   <input type="checkbox" id="bateria" name="inventario[]" value="BATERIA">
+                   <label for="bateria">BATERIA</label><br>
+                   
+                   <input type="checkbox" id="tarjeta_seguridad" name="inventario[]" value="TARJETA DE SEGURIDAD">
+                   <label for="tarjeta_seguridad">TARJETA DE SEGURIDAD</label><br>
+
+            
+            <input type="submit" name="guardar" value="Guardar Datos">
+            <input type="submit" name="generar_pdf" value="Generar PDF">
+        </form>
+    </div>
+</body>
+</html>
